@@ -22,7 +22,7 @@ before_action :move_to_index, only: :edit
     @comments = @prototype.comments.includes(:user)
   end
   def edit
-    
+   
   end
   def update
     prototype = Prototype.find(params[:id])
