@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root to: "prototypes#index"
   post 'prototypes/:id' => 'prototypes#show'
   get 'user/:id' => 'users#show'
+  patch 'prototypes/:id/edit' => 'prototypes#edit'
   resources :prototypes do
     resources :comments, only: :create
   end
